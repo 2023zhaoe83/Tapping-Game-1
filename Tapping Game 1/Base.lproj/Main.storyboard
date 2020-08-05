@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Easy View Controller-->
         <scene sceneID="6Zw-16-88w">
             <objects>
-                <viewController id="VJq-D1-385" sceneMemberID="viewController">
+                <viewController id="VJq-D1-385" customClass="GameEasyViewController" customModule="Tapping_Game_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1EB-nB-Chc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,15 +155,19 @@
                         <viewLayoutGuide key="safeArea" id="ToX-D7-GcC"/>
                     </view>
                     <navigationItem key="navigationItem" id="9Y4-lL-jpb"/>
+                    <connections>
+                        <outlet property="easyScoreLabel" destination="7Ln-RZ-oBz" id="ovV-sK-pr4"/>
+                        <outlet property="easyTimeLabel" destination="Lhc-u2-XMy" id="lu9-9h-PAL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8p6-kO-MwX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1831.8840579710147" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Medium View Controller-->
         <scene sceneID="6ii-Pm-mcH">
             <objects>
-                <viewController id="cvc-oM-wK6" sceneMemberID="viewController">
+                <viewController id="cvc-oM-wK6" customClass="GameMediumViewController" customModule="Tapping_Game_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YRD-jf-Gqd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,10 +234,10 @@
             </objects>
             <point key="canvasLocation" x="2566.666666666667" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Hard View Controller-->
         <scene sceneID="pHn-jG-3zY">
             <objects>
-                <viewController id="F6a-rV-CAc" sceneMemberID="viewController">
+                <viewController id="F6a-rV-CAc" customClass="GameHardViewController" customModule="Tapping_Game_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NYk-uF-n03">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,7 +264,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYY-Iv-sPT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYY-Iv-sPT">
                                 <rect key="frame" x="57" y="223" width="300" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="4l8-m5-I6R"/>
