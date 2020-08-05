@@ -13,8 +13,7 @@ class GameEasyViewController: UIViewController {
     @IBOutlet weak var easyScoreLabel: UILabel!
     @IBOutlet weak var easyTimeLabel: UILabel!
     var seconds = 30
-    
-    
+    var tapInt = 1
     
     
     
@@ -27,10 +26,16 @@ class GameEasyViewController: UIViewController {
         let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.easyTimeLabel.text = String(self.seconds)
             self.seconds -= 1
-            if self.seconds == 0 {
-                self.timer.invalidate()
+            if self.seconds == -1 {
+                timer.invalidate()
+                
             }
         }
+    
+    }
+    @IBAction func tapScore(_ sender: Any) {
+        self.easyScoreLabel.text = String(self.tapInt)
+        self.tapInt += 1
     }
     
 
