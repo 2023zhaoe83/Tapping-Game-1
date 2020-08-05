@@ -133,7 +133,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhc-u2-XMy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhc-u2-XMy">
                                 <rect key="frame" x="129" y="564" width="156" height="113.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="113.5" id="7NK-kV-TKE"/>
@@ -196,8 +196,11 @@
                                 <state key="normal" title="TAP ME">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapScore:" destination="cvc-oM-wK6" eventType="touchUpInside" id="M41-lK-01d"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tc-15-Ijm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tc-15-Ijm">
                                 <rect key="frame" x="57" y="223" width="300" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="0F1-M7-HpT"/>
@@ -207,7 +210,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOU-ry-yq8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOU-ry-yq8">
                                 <rect key="frame" x="57" y="578" width="300" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="9KJ-ak-ScG"/>
@@ -232,6 +235,10 @@
                         <viewLayoutGuide key="safeArea" id="JbP-iM-xe4"/>
                     </view>
                     <navigationItem key="navigationItem" id="wMC-79-jVj"/>
+                    <connections>
+                        <outlet property="mediumScoreLabel" destination="3Tc-15-Ijm" id="dSC-OH-p5S"/>
+                        <outlet property="mediumTimeLabel" destination="SOU-ry-yq8" id="4iT-3u-K7R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdQ-sR-uSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,8 +273,11 @@
                                 <state key="normal" title="TAP ME">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapScore:" destination="F6a-rV-CAc" eventType="touchUpInside" id="rkR-w8-jOZ"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYY-Iv-sPT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYY-Iv-sPT">
                                 <rect key="frame" x="57" y="223" width="300" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="4l8-m5-I6R"/>
@@ -277,7 +287,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rP-uP-VRF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rP-uP-VRF">
                                 <rect key="frame" x="57" y="578" width="300" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="MdJ-8N-tVt"/>
@@ -302,6 +312,10 @@
                         <viewLayoutGuide key="safeArea" id="c6w-NQ-1hN"/>
                     </view>
                     <navigationItem key="navigationItem" id="5il-oB-1fQ"/>
+                    <connections>
+                        <outlet property="hardScoreLabel" destination="fYY-Iv-sPT" id="SrE-Fh-mx4"/>
+                        <outlet property="hardTimeLabel" destination="5rP-uP-VRF" id="S1Q-qn-RTY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oR1-Wx-LVi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

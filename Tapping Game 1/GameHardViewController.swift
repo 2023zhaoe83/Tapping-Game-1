@@ -9,24 +9,52 @@
 import UIKit
 
 class GameHardViewController: UIViewController {
-
+    
     @IBOutlet weak var hardScoreLabel: UILabel!
     @IBOutlet weak var hardTimeLabel: UILabel!
+    var seconds = 10
+    var tapInt = 1
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        startTimer()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func startTimer() {
+        let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            self.hardTimeLabel.text = String(self.seconds)
+            self.seconds -= 1
+            if self.seconds == -1 {
+                timer.invalidate()
+                self.displayAlert(message: "Game Over")
+            }
+            
+        }
+    
+   }
+    func resetGame(){
+       hardScoreLabel.text = ""
+   }
+   func displayAlert(message: String){
+       let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+       let alertAction = UIAlertAction(title: "Game Over!", style: .default){
+           (action) in self.resetGame()
     }
-    */
-
+    alert.addAction(alertAction)
+    present(alert, animated: true, completion: nil)
+    
+       
+   }
+    @IBAction func tapScore(_ sender: Any) {
+        self.hardScoreLabel.text = String(self.tapInt)
+        self.tapInt += 1
+    }
+    
+    
+    
+    
+    
+    
 }
+
+
+
