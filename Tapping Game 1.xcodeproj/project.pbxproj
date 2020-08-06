@@ -13,6 +13,8 @@
 		A11998A224D9CB5C007A1B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11998A024D9CB5C007A1B75 /* Main.storyboard */; };
 		A11998A424D9CB5E007A1B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11998A324D9CB5E007A1B75 /* Assets.xcassets */; };
 		A11998A724D9CB5E007A1B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11998A524D9CB5E007A1B75 /* LaunchScreen.storyboard */; };
+		B443B13924DC711B006E24CC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B443B13824DC711B006E24CC /* AVFoundation.framework */; };
+		B443B13B24DC74C3006E24CC /* pixelMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B443B13A24DC74C3006E24CC /* pixelMusic.mp3 */; };
 		B4A61FB024D9EE6100845CB4 /* GameEasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A61FAF24D9EE6100845CB4 /* GameEasyViewController.swift */; };
 		B4A61FB224D9EE8700845CB4 /* GameMediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A61FB124D9EE8700845CB4 /* GameMediumViewController.swift */; };
 		B4A61FB424D9EE9900845CB4 /* GameHardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A61FB324D9EE9900845CB4 /* GameHardViewController.swift */; };
@@ -27,6 +29,8 @@
 		A11998A324D9CB5E007A1B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11998A624D9CB5E007A1B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A11998A824D9CB5E007A1B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B443B13824DC711B006E24CC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B443B13A24DC74C3006E24CC /* pixelMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pixelMusic.mp3; path = ../../../../../Downloads/pixelMusic.mp3; sourceTree = "<group>"; };
 		B4A61FAF24D9EE6100845CB4 /* GameEasyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEasyViewController.swift; sourceTree = "<group>"; };
 		B4A61FB124D9EE8700845CB4 /* GameMediumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMediumViewController.swift; sourceTree = "<group>"; };
 		B4A61FB324D9EE9900845CB4 /* GameHardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHardViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B443B13924DC711B006E24CC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,7 @@
 			children = (
 				A119989924D9CB5C007A1B75 /* Tapping Game 1 */,
 				A119989824D9CB5C007A1B75 /* Products */,
+				B443B13724DC711B006E24CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +68,7 @@
 		A119989924D9CB5C007A1B75 /* Tapping Game 1 */ = {
 			isa = PBXGroup;
 			children = (
+				B443B13A24DC74C3006E24CC /* pixelMusic.mp3 */,
 				A119989A24D9CB5C007A1B75 /* AppDelegate.swift */,
 				A119989C24D9CB5C007A1B75 /* SceneDelegate.swift */,
 				A119989E24D9CB5C007A1B75 /* ViewController.swift */,
@@ -74,6 +81,14 @@
 				B4A61FB324D9EE9900845CB4 /* GameHardViewController.swift */,
 			);
 			path = "Tapping Game 1";
+			sourceTree = "<group>";
+		};
+		B443B13724DC711B006E24CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B443B13824DC711B006E24CC /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +152,7 @@
 				A11998A724D9CB5E007A1B75 /* LaunchScreen.storyboard in Resources */,
 				A11998A424D9CB5E007A1B75 /* Assets.xcassets in Resources */,
 				A11998A224D9CB5C007A1B75 /* Main.storyboard in Resources */,
+				B443B13B24DC74C3006E24CC /* pixelMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
