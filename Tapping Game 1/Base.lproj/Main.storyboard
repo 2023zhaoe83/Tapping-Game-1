@@ -185,21 +185,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgg-a9-IHT">
-                                <rect key="frame" x="119.5" y="361" width="175" height="175"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="PP6-zH-mmp"/>
-                                    <constraint firstAttribute="height" constant="175" id="vFG-eK-hGE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
-                                <state key="normal" title="TAP ME">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapScore:" destination="cvc-oM-wK6" eventType="touchUpInside" id="M41-lK-01d"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tc-15-Ijm">
                                 <rect key="frame" x="57" y="223" width="300" height="100"/>
                                 <constraints>
@@ -213,24 +198,39 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOU-ry-yq8">
                                 <rect key="frame" x="57" y="578" width="300" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="9KJ-ak-ScG"/>
-                                    <constraint firstAttribute="width" constant="300" id="BJV-e6-6ST"/>
+                                    <constraint firstAttribute="width" constant="300" id="F22-Vl-lEw"/>
+                                    <constraint firstAttribute="height" constant="100" id="Tix-zQ-e7o"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgg-a9-IHT">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="6P1-D6-QQo"/>
+                                    <constraint firstAttribute="width" constant="150" id="nS1-dr-zq8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <state key="normal" title="TAP ME">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapScore:" destination="cvc-oM-wK6" eventType="touchUpInside" id="M41-lK-01d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SOU-ry-yq8" firstAttribute="centerX" secondItem="YRD-jf-Gqd" secondAttribute="centerX" id="2ga-Cy-Eug"/>
-                            <constraint firstItem="Cgg-a9-IHT" firstAttribute="top" secondItem="3Tc-15-Ijm" secondAttribute="bottom" constant="38" id="6ea-G3-ndF"/>
                             <constraint firstItem="U1z-2B-keB" firstAttribute="top" secondItem="JbP-iM-xe4" secondAttribute="top" constant="44" id="GBI-8m-iEl"/>
                             <constraint firstItem="3Tc-15-Ijm" firstAttribute="top" secondItem="U1z-2B-keB" secondAttribute="bottom" constant="20" id="Hyt-32-LOa"/>
-                            <constraint firstItem="SOU-ry-yq8" firstAttribute="top" secondItem="Cgg-a9-IHT" secondAttribute="bottom" constant="42" id="Myl-5o-zBa"/>
                             <constraint firstItem="U1z-2B-keB" firstAttribute="centerX" secondItem="YRD-jf-Gqd" secondAttribute="centerX" id="TgE-3F-bEM"/>
-                            <constraint firstItem="Cgg-a9-IHT" firstAttribute="centerX" secondItem="YRD-jf-Gqd" secondAttribute="centerX" id="XBi-Ga-Eq9"/>
+                            <constraint firstItem="Cgg-a9-IHT" firstAttribute="centerX" secondItem="YRD-jf-Gqd" secondAttribute="centerX" id="aLK-xa-g7j"/>
+                            <constraint firstItem="Cgg-a9-IHT" firstAttribute="top" secondItem="3Tc-15-Ijm" secondAttribute="bottom" constant="50" id="eez-Zk-xe7"/>
+                            <constraint firstItem="SOU-ry-yq8" firstAttribute="centerX" secondItem="YRD-jf-Gqd" secondAttribute="centerX" id="gVl-ah-UwB"/>
                             <constraint firstItem="3Tc-15-Ijm" firstAttribute="centerX" secondItem="YRD-jf-Gqd" secondAttribute="centerX" id="oMI-I0-Jft"/>
+                            <constraint firstItem="SOU-ry-yq8" firstAttribute="top" secondItem="Cgg-a9-IHT" secondAttribute="bottom" constant="55" id="vXg-TR-406"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JbP-iM-xe4"/>
                     </view>
@@ -262,21 +262,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLI-7D-reA">
-                                <rect key="frame" x="132" y="373" width="150" height="150"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="BPy-XE-SMZ"/>
-                                    <constraint firstAttribute="width" constant="150" id="v5T-nW-fTo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="35"/>
-                                <state key="normal" title="TAP ME">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapScore:" destination="F6a-rV-CAc" eventType="touchUpInside" id="rkR-w8-jOZ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYY-Iv-sPT">
                                 <rect key="frame" x="57" y="223" width="300" height="100"/>
                                 <constraints>
@@ -290,24 +275,40 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rP-uP-VRF">
                                 <rect key="frame" x="57" y="578" width="300" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="MdJ-8N-tVt"/>
-                                    <constraint firstAttribute="height" constant="100" id="tBd-m7-BFp"/>
+                                    <constraint firstAttribute="height" constant="100" id="nVi-dd-frQ"/>
+                                    <constraint firstAttribute="width" constant="300" id="ufk-ix-8uI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLI-7D-reA">
+                                <rect key="frame" x="169.5" y="411" width="75" height="75"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="egz-Bp-qHa"/>
+                                    <constraint firstAttribute="height" constant="75" id="gWA-Eh-h3Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="TAP ME">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapScore:" destination="F6a-rV-CAc" eventType="touchUpInside" id="rkR-w8-jOZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5rP-uP-VRF" firstAttribute="centerX" secondItem="NYk-uF-n03" secondAttribute="centerX" id="5kn-5m-gwV"/>
-                            <constraint firstItem="5rP-uP-VRF" firstAttribute="top" secondItem="jLI-7D-reA" secondAttribute="bottom" constant="55" id="QfV-7A-B4o"/>
+                            <constraint firstItem="5rP-uP-VRF" firstAttribute="centerX" secondItem="NYk-uF-n03" secondAttribute="centerX" id="D0d-Xs-zoZ"/>
+                            <constraint firstItem="5rP-uP-VRF" firstAttribute="top" secondItem="jLI-7D-reA" secondAttribute="bottom" constant="92" id="J9P-42-Xue"/>
+                            <constraint firstItem="5rP-uP-VRF" firstAttribute="centerX" secondItem="NYk-uF-n03" secondAttribute="centerX" id="YF3-Ev-oHQ"/>
                             <constraint firstItem="Pfw-Jj-p1K" firstAttribute="top" secondItem="c6w-NQ-1hN" secondAttribute="top" constant="44" id="Ygp-7Y-OZn"/>
                             <constraint firstItem="fYY-Iv-sPT" firstAttribute="top" secondItem="Pfw-Jj-p1K" secondAttribute="bottom" constant="20" id="dbW-75-F7J"/>
                             <constraint firstItem="fYY-Iv-sPT" firstAttribute="centerX" secondItem="NYk-uF-n03" secondAttribute="centerX" id="gRl-4d-Li4"/>
                             <constraint firstItem="Pfw-Jj-p1K" firstAttribute="centerX" secondItem="NYk-uF-n03" secondAttribute="centerX" id="h1H-ki-PUN"/>
-                            <constraint firstItem="jLI-7D-reA" firstAttribute="centerX" secondItem="NYk-uF-n03" secondAttribute="centerX" id="jr5-Nw-n8P"/>
-                            <constraint firstItem="jLI-7D-reA" firstAttribute="top" secondItem="fYY-Iv-sPT" secondAttribute="bottom" constant="50" id="vZX-do-L1o"/>
+                            <constraint firstItem="jLI-7D-reA" firstAttribute="top" secondItem="fYY-Iv-sPT" secondAttribute="bottom" constant="88" id="uUO-ci-LxK"/>
+                            <constraint firstItem="jLI-7D-reA" firstAttribute="centerX" secondItem="NYk-uF-n03" secondAttribute="centerX" id="zCK-pG-ZXR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c6w-NQ-1hN"/>
                     </view>
