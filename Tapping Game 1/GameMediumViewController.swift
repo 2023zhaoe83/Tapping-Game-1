@@ -43,7 +43,7 @@ class GameMediumViewController: UIViewController {
     
     func displayAlert(message: String){
         let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Game Over!", style: .default){
+        let alertAction = UIAlertAction(title: "Play again", style: .default){
             (action) in self.resetGame()
         }
         alert.addAction(alertAction)
